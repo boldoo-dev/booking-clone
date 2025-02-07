@@ -42,7 +42,6 @@ const callsToAction = [
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  console.log("Mobile Menu Open:", mobileMenuOpen);
 
   return (
     <header className="bg-[#013B94]">
