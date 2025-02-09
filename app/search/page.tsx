@@ -13,7 +13,7 @@ type SearchParams = {
 };
 function SearchPage({ searchParams }: Props) {
   if (!searchParams.url) return notFound();
-  console.log(searchParams.checkin);
+  
   return <div>SearchPage</div>;
 }
 

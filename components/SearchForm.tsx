@@ -88,7 +88,7 @@ function SearchForm() {
         className="flex flex-col lg:flex-row lg:max-w-6xl lg:mx-auto items-center justify-center     
         space-x-0 lg:space-x-2 space-y-4 lg:space-y-0 rounded-lg"
       >
-        <div className="grid w-full lg:max-w-sm flex-1  items-center gap-1.5">
+        <div className="grid w-full lg:max-w-sm flex-2  items-center gap-1.5">
           <FormField
             control={form.control}
             name="location"
@@ -100,8 +100,8 @@ function SearchForm() {
                 </FormLabel>
 
                 <FormControl>
-                  <Input placeholder="London, UK" {...field} />
-                  {/* <Input placeholder="London, UK" className="bg-white text-black" {...field} /> */}
+                  {/* <Input placeholder="London, UK" {...field} /> */}
+                  <Input placeholder="London, UK" className="bg-white text-black" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -176,7 +176,8 @@ function SearchForm() {
                   <FormLabel className="text-white">Adults</FormLabel>
                   <FormMessage />
                   <FormControl>
-                    <Input type="number" placeholder="Adults" {...field} />
+
+                    <Input type="number" className="bg-white text-black"  placeholder="Adults" {...field} />
                   </FormControl>
                 </FormItem>
               )}
@@ -191,7 +192,7 @@ function SearchForm() {
                 <FormItem className="flex flex-col">
                   <FormLabel className="text-white">Children</FormLabel>
                   <FormControl>
-                    <Input type="number" placeholder="Children" {...field} />
+                    <Input type="number" className="bg-white text-black"  placeholder="Children" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -207,7 +208,7 @@ function SearchForm() {
                 <FormItem className="flex flex-col">
                   <FormLabel className="text-white">Rooms</FormLabel>
                   <FormControl>
-                    <Input type="number" placeholder="Rooms" {...field} />
+                    <Input type="number" className="bg-white text-black"  placeholder="Rooms" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
