@@ -15,7 +15,7 @@ export async function fetchResults(searchParams: SearchParams) {
     }
   });
 
-  // console.log("scraping url >>>", url.href);
+  console.log("scraping url >>>", url.href);
 
   const body = {
     source: "universal",
@@ -140,6 +140,7 @@ export async function fetchResults(searchParams: SearchParams) {
   })
     .then((response) => response.json())
     .then((data) => {
+      console.log("data >>>", data);
 
       if (data.results.length === 0) return;
       const result: Result = data.results[0];

@@ -43,8 +43,8 @@ async function SearchPage({ searchParams }: Props) {
               <img
                 src={item.url}
                 alt="image of property"
-                className="h-44 w-44 rounded-lg md:h-36 md:w-36"
-                // className="h-44 w-44 rounded-lg"
+                // className="h-44 w-44 rounded-lg md:h-36 md:w-36"
+                className="h-44 w-44 rounded-lg"
               />
               <div className="flex flex-1 space-x-5 justify-between">
                 <div>
@@ -58,8 +58,8 @@ async function SearchPage({ searchParams }: Props) {
                 </div>
               </div>
 
-              {/* <div className="flex flex-col justify-between"> */}
-              <div className="flex flex-1 space-x-5 justify-between">
+              <div className="flex flex-col justify-between">
+              {/* <div className="flex flex-1 space-x-5 justify-between"> */}
 
                 <div className="flex items-start justify-end space-x-2 text-right">
                   <div>
