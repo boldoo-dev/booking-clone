@@ -15,7 +15,7 @@ export async function fetchResults(searchParams: SearchParams) {
     }
   });
 
-  console.log("scraping url >>>", url.href);
+  // console.log("scraping url >>>", url.href);
 
   const body = {
     source: "universal",
