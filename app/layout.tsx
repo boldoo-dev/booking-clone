@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/Header";
-import SearchForm from "@/components/SearchForm";
 
 export const metadata: Metadata = {
   title: "Booking clone",

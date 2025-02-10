@@ -2,9 +2,10 @@ import { SearchParams } from "@/app/search/page";
 import { Result } from "@/typings";
 
 export async function fetchResults(searchParams: SearchParams) {
-  const username = process.env.OXY_USERNAME;
-  const password = process.env.OXY_PASSWORD;
-
+  const username = "admin_MBagM";
+  const password = "systemAdmin_123";
+  // const username = process.env.OXY_USERNAME;
+  // const password = process.env.OXY_PASSWORD;
   const url = new URL(searchParams.url);
   Object.keys(searchParams).forEach((key) => {
     if (key === "url" || key === "location") return;
@@ -140,7 +141,6 @@ export async function fetchResults(searchParams: SearchParams) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log("data >>>", data);
 
       if (data.results.length === 0) return;
       const result: Result = data.results[0];
